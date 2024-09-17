@@ -1,0 +1,10 @@
+spring:
+  mvc:
+    static-path-pattern: /backend/**
+  web:
+    resources:
+      static-locations: file:C:\Users\monologue\IdeaProjects\demo3\src\main\resources\backend
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB

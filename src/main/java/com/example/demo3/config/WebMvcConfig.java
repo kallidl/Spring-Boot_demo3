@@ -18,8 +18,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/backend/toLoginPage").setViewName("/backend/login.html");
         registry.addViewController("/backend").setViewName("/backend/index.html");
     }
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**").excludePathPatterns("/backend/login.html"); //放行登录页，登陆操作，静态资源
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**").excludePathPatterns("/backend/login.html"); //放行登录页，登陆操作，静态资源
+//    }
 }
