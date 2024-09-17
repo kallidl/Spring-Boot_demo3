@@ -1,7 +1,10 @@
 package com.example.demo3.web;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
+@WebFilter("/first")
 
 public class MyFilter  implements Filter {
     @Override
